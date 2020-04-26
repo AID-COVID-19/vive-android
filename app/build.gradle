@@ -72,4 +72,8 @@ dependencies {
 
     //loading button
     implementation "com.github.koushikcse:LoadingButton:1.5"
+
+    implementation 'com.google.android.gms:play-services-nearby:17.0.0'
+
+
 }

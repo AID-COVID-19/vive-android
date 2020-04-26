@@ -49,6 +49,7 @@
             </intent-filter>
         </activity>
         <activity android:name="care.vive.android.main.MainActivity" />
+        <activity android:name="care.vive.android.onboarding.NearbyConnectionsContributor" />
 
         <service android:name="org.eclipse.paho.android.service.MqttService" />
     </application>
