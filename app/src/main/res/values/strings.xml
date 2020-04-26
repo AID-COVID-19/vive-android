@@ -145,5 +145,6 @@
     <string name="card_vital_signs_R_2">"14 – 20"</string>
     <string name="card_vital_signs_R_3">"21 – 28"</string>
     <string name="card_vital_signs_R_4">mayor que 28</string>
+    <string name="error_missing_permissions">Error missing permissions!</string>
 
 </resources>
