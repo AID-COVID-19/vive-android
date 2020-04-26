@@ -1,18 +1,6 @@
 # Vive
 #### Notice: This app is under development.
 
-## Overview 
-
-Application As a Service, which allows patients to self-check at home under supervision by authorized doctors through administrators.
-
-It is a project developed by the organization Ai Covid 19. An organization that started on March 20, 2020, in response to the SARS-CoV-2 pandemia that worsen in America during that time. You can see more about us at www.ai-covid-19.com
-
-## Technical description
-
-Open source Android application written in kotlin on Amazon AWS. 
-
-This version include keys for API access for a development enviroment for easy test, but you cannot used them for production. 
-
 
 ## MIT LICENSE
 ### Copyright 2020 ai-covid-19
