@@ -15,7 +15,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.vive.android.R
 import com.vive.android.databinding.FragmentMapBinding
 
-class MapFragment : Fragment(), OnMapReadyCallback {
+open class MapFragment(arg1: Any) : Fragment(), OnMapReadyCallback {
 
     private lateinit var mapViewModel: MapViewModel
     private lateinit var mMap: GoogleMap
@@ -41,6 +41,9 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         return binding.root
     }
 
+    fun getmMap(): GoogleMap? {
+        return mMap
+    }
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
