@@ -159,10 +159,9 @@ public class NearbyConnectionsContributor extends AppCompatActivity {
         recreate();
     }
     /** Finds an opponent to play the game with using Nearby Connections. */
-    public void findOpponent(View view) {
+    public void findExplorer(View view) {
         startAdvertising();
         startDiscovery();
-        findOpponentButton.setEnabled(false);
     }
     /** Starts looking for other players using Nearby Connections. */
     private void startDiscovery() {

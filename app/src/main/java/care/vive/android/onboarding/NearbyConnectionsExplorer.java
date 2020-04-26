@@ -51,7 +51,6 @@ public class NearbyConnectionsExplorer extends AppCompatActivity {
      */
     private final String codeName = "2" + "1234567";
     private String opponentEndpointId;
-    private Button findOpponentButton;
     private String opponentName;
     private Button disconnectButton;
     private TextView statusText;
@@ -160,10 +159,9 @@ public class NearbyConnectionsExplorer extends AppCompatActivity {
         recreate();
     }
     /** Finds an opponent to play the game with using Nearby Connections. */
-    public void findOpponent(View view) {
+    public void findContributor(View view) {
         startAdvertising();
         startDiscovery();
-        findOpponentButton.setEnabled(false);
     }
     /** Starts looking for other players using Nearby Connections. */
     private void startDiscovery() {
