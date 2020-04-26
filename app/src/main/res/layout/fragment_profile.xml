@@ -9,6 +9,7 @@
     android:nestedScrollingEnabled="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/fragment_padding_extended"
     android:layout_margin="@dimen/fragment_margin"
     tools:context="care.vive.android.profile.ProfileFragment">
 
@@ -136,6 +137,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"
+                app:cardElevation="0dp"
                 android:clickable="true"
                 android:focusable="true">
                 <LinearLayout
@@ -168,6 +170,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardElevation="0dp"
                 android:layout_marginTop="@dimen/activity_txt_margin_title_1"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"

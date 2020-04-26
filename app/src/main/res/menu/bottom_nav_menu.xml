@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_local_hospital_black_36dp"
+        android:icon="@drawable/ic_security_black_36dp"
         android:title="@null"/>
 
     <item
