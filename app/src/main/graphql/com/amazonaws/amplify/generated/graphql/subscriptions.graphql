@@ -1,0 +1,322 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateCheck(
+  $checkTimestamp: AWSTimestamp
+  $identityId: String
+  $howYouFeel: String
+  $generalDiscomfort: Boolean
+  $itchyOrSoreThroat: Boolean
+) {
+  onCreateCheck(
+    checkTimestamp: $checkTimestamp
+    identityId: $identityId
+    howYouFeel: $howYouFeel
+    generalDiscomfort: $generalDiscomfort
+    itchyOrSoreThroat: $itchyOrSoreThroat
+  ) {
+    checkTimestamp
+    identityId
+    howYouFeel
+    generalDiscomfort
+    itchyOrSoreThroat
+    diarrhea
+    badTasteInTheMouth
+    lossOfTasteInFood
+    lossOfSmell
+    musclePains
+    chestOrBackPain
+    headache
+    wetCoughWithPhlegm
+    dryCough
+    chill
+    fever
+    fatigueWhenWalkingOrClimbingStairs
+    feelingShortOfBreathWithDailyActivities
+    feelingOfStrainingToBreathe
+    respiratoryDistress
+    confusion
+    bluishLipsOrFace
+    otherSymptomsOrDiscomfort
+    temperatureRange
+    breathsPerMinuteRange
+    bloodPressureLowValue
+    bloodPressureHighValue
+    haveYouBeenNervousOrAnxious
+    CouldntStopBeingWorried
+    HaveYouWorriedTooMuchAboutDifferentThings
+    HaveYouHadDifficultyRelaxing
+    HaveYouBeenSoRestlessThatItIsDifficultToStayStill
+    HaveYouBecomeEasilyAnnoyedOrIrritable
+    HaveYouFeltFearAsIfSomethingHorribleWasGoingToHappen
+    AreYouTakingYourMedications
+    RiskResult
+    RiskScore
+  }
+}
+subscription OnUpdateCheck(
+  $checkTimestamp: AWSTimestamp
+  $identityId: String
+  $howYouFeel: String
+  $generalDiscomfort: Boolean
+  $itchyOrSoreThroat: Boolean
+) {
+  onUpdateCheck(
+    checkTimestamp: $checkTimestamp
+    identityId: $identityId
+    howYouFeel: $howYouFeel
+    generalDiscomfort: $generalDiscomfort
+    itchyOrSoreThroat: $itchyOrSoreThroat
+  ) {
+    checkTimestamp
+    identityId
+    howYouFeel
+    generalDiscomfort
+    itchyOrSoreThroat
+    diarrhea
+    badTasteInTheMouth
+    lossOfTasteInFood
+    lossOfSmell
+    musclePains
+    chestOrBackPain
+    headache
+    wetCoughWithPhlegm
+    dryCough
+    chill
+    fever
+    fatigueWhenWalkingOrClimbingStairs
+    feelingShortOfBreathWithDailyActivities
+    feelingOfStrainingToBreathe
+    respiratoryDistress
+    confusion
+    bluishLipsOrFace
+    otherSymptomsOrDiscomfort
+    temperatureRange
+    breathsPerMinuteRange
+    bloodPressureLowValue
+    bloodPressureHighValue
+    haveYouBeenNervousOrAnxious
+    CouldntStopBeingWorried
+    HaveYouWorriedTooMuchAboutDifferentThings
+    HaveYouHadDifficultyRelaxing
+    HaveYouBeenSoRestlessThatItIsDifficultToStayStill
+    HaveYouBecomeEasilyAnnoyedOrIrritable
+    HaveYouFeltFearAsIfSomethingHorribleWasGoingToHappen
+    AreYouTakingYourMedications
+    RiskResult
+    RiskScore
+  }
+}
+subscription OnDeleteCheck(
+  $checkTimestamp: AWSTimestamp
+  $identityId: String
+  $howYouFeel: String
+  $generalDiscomfort: Boolean
+  $itchyOrSoreThroat: Boolean
+) {
+  onDeleteCheck(
+    checkTimestamp: $checkTimestamp
+    identityId: $identityId
+    howYouFeel: $howYouFeel
+    generalDiscomfort: $generalDiscomfort
+    itchyOrSoreThroat: $itchyOrSoreThroat
+  ) {
+    checkTimestamp
+    identityId
+    howYouFeel
+    generalDiscomfort
+    itchyOrSoreThroat
+    diarrhea
+    badTasteInTheMouth
+    lossOfTasteInFood
+    lossOfSmell
+    musclePains
+    chestOrBackPain
+    headache
+    wetCoughWithPhlegm
+    dryCough
+    chill
+    fever
+    fatigueWhenWalkingOrClimbingStairs
+    feelingShortOfBreathWithDailyActivities
+    feelingOfStrainingToBreathe
+    respiratoryDistress
+    confusion
+    bluishLipsOrFace
+    otherSymptomsOrDiscomfort
+    temperatureRange
+    breathsPerMinuteRange
+    bloodPressureLowValue
+    bloodPressureHighValue
+    haveYouBeenNervousOrAnxious
+    CouldntStopBeingWorried
+    HaveYouWorriedTooMuchAboutDifferentThings
+    HaveYouHadDifficultyRelaxing
+    HaveYouBeenSoRestlessThatItIsDifficultToStayStill
+    HaveYouBecomeEasilyAnnoyedOrIrritable
+    HaveYouFeltFearAsIfSomethingHorribleWasGoingToHappen
+    AreYouTakingYourMedications
+    RiskResult
+    RiskScore
+  }
+}
+subscription OnCreateLastCheck(
+  $organizationId: String
+  $checkTimestamp: AWSTimestamp
+  $identityId: String
+  $howYouFeel: String
+  $generalDiscomfort: Boolean
+) {
+  onCreateLastCheck(
+    organizationId: $organizationId
+    checkTimestamp: $checkTimestamp
+    identityId: $identityId
+    howYouFeel: $howYouFeel
+    generalDiscomfort: $generalDiscomfort
+  ) {
+    organizationId
+    checkTimestamp
+    identityId
+    howYouFeel
+    generalDiscomfort
+    itchyOrSoreThroat
+    diarrhea
+    badTasteInTheMouth
+    lossOfTasteInFood
+    lossOfSmell
+    musclePains
+    chestOrBackPain
+    headache
+    wetCoughWithPhlegm
+    dryCough
+    chill
+    fever
+    fatigueWhenWalkingOrClimbingStairs
+    feelingShortOfBreathWithDailyActivities
+    feelingOfStrainingToBreathe
+    respiratoryDistress
+    confusion
+    bluishLipsOrFace
+    otherSymptomsOrDiscomfort
+    temperatureRange
+    breathsPerMinuteRange
+    bloodPressureLowValue
+    bloodPressureHighValue
+    haveYouBeenNervousOrAnxious
+    CouldntStopBeingWorried
+    HaveYouWorriedTooMuchAboutDifferentThings
+    HaveYouHadDifficultyRelaxing
+    HaveYouBeenSoRestlessThatItIsDifficultToStayStill
+    HaveYouBecomeEasilyAnnoyedOrIrritable
+    HaveYouFeltFearAsIfSomethingHorribleWasGoingToHappen
+    AreYouTakingYourMedications
+    RiskResult
+    RiskScore
+  }
+}
+subscription OnUpdateLastCheck(
+  $organizationId: String
+  $checkTimestamp: AWSTimestamp
+  $identityId: String
+  $howYouFeel: String
+  $generalDiscomfort: Boolean
+) {
+  onUpdateLastCheck(
+    organizationId: $organizationId
+    checkTimestamp: $checkTimestamp
+    identityId: $identityId
+    howYouFeel: $howYouFeel
+    generalDiscomfort: $generalDiscomfort
+  ) {
+    organizationId
+    checkTimestamp
+    identityId
+    howYouFeel
+    generalDiscomfort
+    itchyOrSoreThroat
+    diarrhea
+    badTasteInTheMouth
+    lossOfTasteInFood
+    lossOfSmell
+    musclePains
+    chestOrBackPain
+    headache
+    wetCoughWithPhlegm
+    dryCough
+    chill
+    fever
+    fatigueWhenWalkingOrClimbingStairs
+    feelingShortOfBreathWithDailyActivities
+    feelingOfStrainingToBreathe
+    respiratoryDistress
+    confusion
+    bluishLipsOrFace
+    otherSymptomsOrDiscomfort
+    temperatureRange
+    breathsPerMinuteRange
+    bloodPressureLowValue
+    bloodPressureHighValue
+    haveYouBeenNervousOrAnxious
+    CouldntStopBeingWorried
+    HaveYouWorriedTooMuchAboutDifferentThings
+    HaveYouHadDifficultyRelaxing
+    HaveYouBeenSoRestlessThatItIsDifficultToStayStill
+    HaveYouBecomeEasilyAnnoyedOrIrritable
+    HaveYouFeltFearAsIfSomethingHorribleWasGoingToHappen
+    AreYouTakingYourMedications
+    RiskResult
+    RiskScore
+  }
+}
+subscription OnDeleteLastCheck(
+  $organizationId: String
+  $checkTimestamp: AWSTimestamp
+  $identityId: String
+  $howYouFeel: String
+  $generalDiscomfort: Boolean
+) {
+  onDeleteLastCheck(
+    organizationId: $organizationId
+    checkTimestamp: $checkTimestamp
+    identityId: $identityId
+    howYouFeel: $howYouFeel
+    generalDiscomfort: $generalDiscomfort
+  ) {
+    organizationId
+    checkTimestamp
+    identityId
+    howYouFeel
+    generalDiscomfort
+    itchyOrSoreThroat
+    diarrhea
+    badTasteInTheMouth
+    lossOfTasteInFood
+    lossOfSmell
+    musclePains
+    chestOrBackPain
+    headache
+    wetCoughWithPhlegm
+    dryCough
+    chill
+    fever
+    fatigueWhenWalkingOrClimbingStairs
+    feelingShortOfBreathWithDailyActivities
+    feelingOfStrainingToBreathe
+    respiratoryDistress
+    confusion
+    bluishLipsOrFace
+    otherSymptomsOrDiscomfort
+    temperatureRange
+    breathsPerMinuteRange
+    bloodPressureLowValue
+    bloodPressureHighValue
+    haveYouBeenNervousOrAnxious
+    CouldntStopBeingWorried
+    HaveYouWorriedTooMuchAboutDifferentThings
+    HaveYouHadDifficultyRelaxing
+    HaveYouBeenSoRestlessThatItIsDifficultToStayStill
+    HaveYouBecomeEasilyAnnoyedOrIrritable
+    HaveYouFeltFearAsIfSomethingHorribleWasGoingToHappen
+    AreYouTakingYourMedications
+    RiskResult
+    RiskScore
+  }
+}

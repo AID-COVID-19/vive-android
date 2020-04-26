@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#448ef9</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorOnPrimary">#6DA8FF</color>
+    <color name="colorRipple">#F9FBFF</color>
+    <color name="colorAccent">#448ef9</color>
+    <color name="colorBackgroundLight">#F9FBFF</color>
+    <color name="colorFontDark">#000000</color>
+    <color name="colorNavigationBottomBar">#FFFFFF</color>
+
+    <color name="colorBottomFont">#FFFFFF</color>
+
+    <color name="colorFontForDarkBackground">#FFFFFF</color>
+
+    <color name="colorBackgroundGreenAlert">#74B628</color>
+    <color name="colorBackgroundOrangeAlert">#CA7100</color>
+    <color name="colorBackgroundRedAlert">#BC0025</color>
+
+    <color name="colorSecondaryPrimaryDark">#292929</color>
+</resources>

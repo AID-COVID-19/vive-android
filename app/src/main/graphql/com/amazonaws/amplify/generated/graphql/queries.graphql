@@ -1,0 +1,234 @@
+# this is an auto generated file. This will be overwritten
+query GetCheck($identityId: String!, $checkTimestamp: AWSTimestamp!) {
+  getCheck(identityId: $identityId, checkTimestamp: $checkTimestamp) {
+    checkTimestamp
+    identityId
+    howYouFeel
+    generalDiscomfort
+    itchyOrSoreThroat
+    diarrhea
+    badTasteInTheMouth
+    lossOfTasteInFood
+    lossOfSmell
+    musclePains
+    chestOrBackPain
+    headache
+    wetCoughWithPhlegm
+    dryCough
+    chill
+    fever
+    fatigueWhenWalkingOrClimbingStairs
+    feelingShortOfBreathWithDailyActivities
+    feelingOfStrainingToBreathe
+    respiratoryDistress
+    confusion
+    bluishLipsOrFace
+    otherSymptomsOrDiscomfort
+    temperatureRange
+    breathsPerMinuteRange
+    bloodPressureLowValue
+    bloodPressureHighValue
+    haveYouBeenNervousOrAnxious
+    CouldntStopBeingWorried
+    HaveYouWorriedTooMuchAboutDifferentThings
+    HaveYouHadDifficultyRelaxing
+    HaveYouBeenSoRestlessThatItIsDifficultToStayStill
+    HaveYouBecomeEasilyAnnoyedOrIrritable
+    HaveYouFeltFearAsIfSomethingHorribleWasGoingToHappen
+    AreYouTakingYourMedications
+    RiskResult
+    RiskScore
+  }
+}
+query ListChecks(
+  $filter: TableCheckFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listChecks(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      checkTimestamp
+      identityId
+      howYouFeel
+      generalDiscomfort
+      itchyOrSoreThroat
+      diarrhea
+      badTasteInTheMouth
+      lossOfTasteInFood
+      lossOfSmell
+      musclePains
+      chestOrBackPain
+      headache
+      wetCoughWithPhlegm
+      dryCough
+      chill
+      fever
+      fatigueWhenWalkingOrClimbingStairs
+      feelingShortOfBreathWithDailyActivities
+      feelingOfStrainingToBreathe
+      respiratoryDistress
+      confusion
+      bluishLipsOrFace
+      otherSymptomsOrDiscomfort
+      temperatureRange
+      breathsPerMinuteRange
+      bloodPressureLowValue
+      bloodPressureHighValue
+      haveYouBeenNervousOrAnxious
+      CouldntStopBeingWorried
+      HaveYouWorriedTooMuchAboutDifferentThings
+      HaveYouHadDifficultyRelaxing
+      HaveYouBeenSoRestlessThatItIsDifficultToStayStill
+      HaveYouBecomeEasilyAnnoyedOrIrritable
+      HaveYouFeltFearAsIfSomethingHorribleWasGoingToHappen
+      AreYouTakingYourMedications
+      RiskResult
+      RiskScore
+    }
+    nextToken
+  }
+}
+query GetLastCheck($identityId: String!) {
+  getLastCheck(identityId: $identityId) {
+    organizationId
+    checkTimestamp
+    identityId
+    howYouFeel
+    generalDiscomfort
+    itchyOrSoreThroat
+    diarrhea
+    badTasteInTheMouth
+    lossOfTasteInFood
+    lossOfSmell
+    musclePains
+    chestOrBackPain
+    headache
+    wetCoughWithPhlegm
+    dryCough
+    chill
+    fever
+    fatigueWhenWalkingOrClimbingStairs
+    feelingShortOfBreathWithDailyActivities
+    feelingOfStrainingToBreathe
+    respiratoryDistress
+    confusion
+    bluishLipsOrFace
+    otherSymptomsOrDiscomfort
+    temperatureRange
+    breathsPerMinuteRange
+    bloodPressureLowValue
+    bloodPressureHighValue
+    haveYouBeenNervousOrAnxious
+    CouldntStopBeingWorried
+    HaveYouWorriedTooMuchAboutDifferentThings
+    HaveYouHadDifficultyRelaxing
+    HaveYouBeenSoRestlessThatItIsDifficultToStayStill
+    HaveYouBecomeEasilyAnnoyedOrIrritable
+    HaveYouFeltFearAsIfSomethingHorribleWasGoingToHappen
+    AreYouTakingYourMedications
+    RiskResult
+    RiskScore
+  }
+}
+query ListLastChecks(
+  $filter: TableLastCheckFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listLastChecks(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      organizationId
+      checkTimestamp
+      identityId
+      howYouFeel
+      generalDiscomfort
+      itchyOrSoreThroat
+      diarrhea
+      badTasteInTheMouth
+      lossOfTasteInFood
+      lossOfSmell
+      musclePains
+      chestOrBackPain
+      headache
+      wetCoughWithPhlegm
+      dryCough
+      chill
+      fever
+      fatigueWhenWalkingOrClimbingStairs
+      feelingShortOfBreathWithDailyActivities
+      feelingOfStrainingToBreathe
+      respiratoryDistress
+      confusion
+      bluishLipsOrFace
+      otherSymptomsOrDiscomfort
+      temperatureRange
+      breathsPerMinuteRange
+      bloodPressureLowValue
+      bloodPressureHighValue
+      haveYouBeenNervousOrAnxious
+      CouldntStopBeingWorried
+      HaveYouWorriedTooMuchAboutDifferentThings
+      HaveYouHadDifficultyRelaxing
+      HaveYouBeenSoRestlessThatItIsDifficultToStayStill
+      HaveYouBecomeEasilyAnnoyedOrIrritable
+      HaveYouFeltFearAsIfSomethingHorribleWasGoingToHappen
+      AreYouTakingYourMedications
+      RiskResult
+      RiskScore
+    }
+    nextToken
+  }
+}
+query QueryLastChecksByIdentityIdCheckTimestampIndex(
+  $organizationId: String!
+  $first: Int
+  $after: String
+) {
+  queryLastChecksByIdentityIdCheckTimestampIndex(
+    organizationId: $organizationId
+    first: $first
+    after: $after
+  ) {
+    items {
+      organizationId
+      checkTimestamp
+      identityId
+      howYouFeel
+      generalDiscomfort
+      itchyOrSoreThroat
+      diarrhea
+      badTasteInTheMouth
+      lossOfTasteInFood
+      lossOfSmell
+      musclePains
+      chestOrBackPain
+      headache
+      wetCoughWithPhlegm
+      dryCough
+      chill
+      fever
+      fatigueWhenWalkingOrClimbingStairs
+      feelingShortOfBreathWithDailyActivities
+      feelingOfStrainingToBreathe
+      respiratoryDistress
+      confusion
+      bluishLipsOrFace
+      otherSymptomsOrDiscomfort
+      temperatureRange
+      breathsPerMinuteRange
+      bloodPressureLowValue
+      bloodPressureHighValue
+      haveYouBeenNervousOrAnxious
+      CouldntStopBeingWorried
+      HaveYouWorriedTooMuchAboutDifferentThings
+      HaveYouHadDifficultyRelaxing
+      HaveYouBeenSoRestlessThatItIsDifficultToStayStill
+      HaveYouBecomeEasilyAnnoyedOrIrritable
+      HaveYouFeltFearAsIfSomethingHorribleWasGoingToHappen
+      AreYouTakingYourMedications
+      RiskResult
+      RiskScore
+    }
+    nextToken
+  }
+}
