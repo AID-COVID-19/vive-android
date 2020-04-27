@@ -17,5 +17,13 @@
     <fragment
         android:id="@+id/startFragment"
         android:name="care.vive.android.onboarding.StartFragment"
-        android:label="Start" />
+        android:label="Start" >
+        <action
+            android:id="@+id/action_startFragment_to_covidStatusFragment"
+            app:destination="@id/covidStatusFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/covidStatusFragment"
+        android:name="care.vive.android.onboarding.CovidStatusFragment"
+        android:label="CovidStatusFragment" />
 </navigation>

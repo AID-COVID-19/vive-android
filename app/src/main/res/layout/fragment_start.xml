@@ -47,7 +47,7 @@ tools:context="care.vive.android.onboarding.OnboardingActivity">
             app:lb_isCircular="false"
             app:lb_isShadowEnable="true"
             app:lb_shadowColor="@color/colorRipple"
-            app:lb_shadowHeight="1dp" />
+            app:lb_shadowHeight="@dimen/btn_shadow_height" />
 
         <com.kusu.loadingbutton.LoadingButton
             android:id="@+id/btnHowWorks"
@@ -64,7 +64,7 @@ tools:context="care.vive.android.onboarding.OnboardingActivity">
             app:lb_isCircular="false"
             app:lb_isShadowEnable="true"
             app:lb_shadowColor="@color/colorRipple"
-            app:lb_shadowHeight="1dp" />
+            app:lb_shadowHeight="@dimen/btn_shadow_height" />
 
         <TextView
             android:id="@+id/btnPolicy"

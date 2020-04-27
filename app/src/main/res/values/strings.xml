@@ -2,6 +2,9 @@
     <string name="app_name">VIVE</string>
     <string name="title_home">Map</string>
     <string name="title_sign_in">Sign In</string>
+    <string name="btn_next_title">Next</string>
+    <string name="title_questions_option_covid">Select the option that best identifies your status</string>
+
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Profile</string>
     <string name="user_title">Your are a contributor</string>
@@ -24,9 +27,16 @@
     <string name="start_title">Discover which places are safe and reduce the risk of spread the SARS-CoV-2 virus, by sharing your status anonymously.</string>
     <string name="splash_notice">Let’s restart our world working together!</string>
 
+    <string name="radio_possible_covid">I have or is possible that I have COVID-19.</string>
+    <string name="radio_covid_diagnosed">I had COVID-19 diagnosed by a physician.</string>
+    <string name="radio_possible_had_covid">It is very possible that I have had COVID-19.</string>
+    <string name="radio_tested_positive_covid">I tested positive for the antibody test for COVID-19.</string>
+    <string name="radio_not_have_covid">I have not had COVID-19 or do not know my status.</string>
+
      <string name="privacy_notice_title">Privacy Policy</string>
 
     <string name="title_activity_maps">Map</string>
     <string name="error_missing_permissions">Error missing permissions!</string>
+
 
 </resources>

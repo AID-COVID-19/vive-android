@@ -20,4 +20,9 @@
 
     <dimen name="button_elevation">4dp</dimen>
     <dimen name="button_height">54dp</dimen>
+
+    <dimen name="txt_interline">6dp</dimen>
+    <dimen name="btn_margin_bottom_end_views">18dp</dimen>
+
+    <dimen name="btn_shadow_height">1dp</dimen>
 </resources>
