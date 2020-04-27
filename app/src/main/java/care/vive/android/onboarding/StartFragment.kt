@@ -25,10 +25,10 @@ class StartFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val listener: (View) -> Unit = {
-            val directions = StartFragmentDirections.actionStartFragmentToCovidStatusFragment()
+            val directions = StartFragmentDirections.actionStartFragmentToShareCovidStatusFragment()
             navigate(directions)
         }
-        binding.btnStart.setOnClickListener(listener)
+        binding.btnNext.setOnClickListener(listener)
     }
 
 }

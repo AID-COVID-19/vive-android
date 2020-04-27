@@ -25,7 +25,7 @@ class DateStatusFragment  : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val listener: (View) -> Unit = {
-            val directions = DateStatusFragmentDirections.actionDateStatusFragmentToShareCovidStatusFragment()
+            val directions = DateStatusFragmentDirections.actionDateStatusFragmentToBeContributingFragment()
             navigate(directions)
         }
         binding.btnNext.setOnClickListener(listener)

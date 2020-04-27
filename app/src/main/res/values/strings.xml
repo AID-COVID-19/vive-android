@@ -3,6 +3,7 @@
     <string name="title_home">Map</string>
     <string name="title_sign_in">Sign In</string>
     <string name="btn_next_title">Next</string>
+    <string name="btn_finish_title">Finish</string>
     <string name="privacy_notice_title">Privacy Policy</string>
     <string name="date_format">MMMM DD, AAAA</string>
 
@@ -20,12 +21,12 @@
     <string name="update_covid_status">Update your COVID-19 status</string>
     <string name="update_covid_status_notice">I had COVID-19 diagnosed by a physician.</string>
     <string name="support">Support</string>
-    <string name="support_notice">Report any violation of privacy, so that the Vive team can make the necessary corrections.</string>
-    <string name="about_how_works">About how Vive works</string>
+    <string name="support_notice">Report any violation of privacy, so that the VIVE team can make the necessary corrections.</string>
+    <string name="about_how_works">About how VIVE works</string>
     <string name="about_how_works_notice">This app processes the visits of users in places, using COVID-19 status, social distance and other variables, calculates the the approximate statistical risk of contagion of the place in real time, without exposing the identity of the user.</string>
     <string name="button_start">Start</string>
     <string name="button_how_this_works">How this works</string>
-    <string name="start_title">Discover which places are safe and reduce the risk of spread the SARS-CoV-2 virus, by sharing your status anonymously.</string>
+    <string name="start_title">Discover SARS-CoV-2 risk on the map.</string>
     <string name="splash_notice">Let’s restart our world working together!</string>
 
     <string name="title_questions_option_covid">Select the option that best identifies your status</string>
@@ -48,6 +49,7 @@
 
     <string name="title_activity_maps">Map</string>
     <string name="error_missing_permissions">Error missing permissions!</string>
+    <string name="start_notice">Browse the map and discover in real time the possible risk of contagion in public places, calculated from the density of people on the site, the lifetime of the virus on surfaces and the voluntary and anonymous report of COVID-19 status.</string>
 
 
 </resources>

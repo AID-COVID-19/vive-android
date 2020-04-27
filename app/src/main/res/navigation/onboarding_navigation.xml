@@ -19,8 +19,8 @@
         android:label="fragment_date_status"
         tools:layout="@layout/fragment_date_status" >
         <action
-            android:id="@+id/action_dateStatusFragment_to_shareCovidStatusFragment"
-            app:destination="@id/shareCovidStatusFragment" />
+            android:id="@+id/action_dateStatusFragment_to_beContributingFragment"
+            app:destination="@id/beContributingFragment" />
     </fragment>
     <fragment
         android:id="@+id/covidStatusFragment"
@@ -37,14 +37,17 @@
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action
-            android:id="@+id/action_startFragment_to_covidStatusFragment"
-            app:destination="@id/covidStatusFragment" />
+            android:id="@+id/action_startFragment_to_shareCovidStatusFragment"
+            app:destination="@id/shareCovidStatusFragment" />
     </fragment>
     <fragment
         android:id="@+id/shareCovidStatusFragment"
         android:name="care.vive.android.onboarding.ShareCovidStatusFragment"
         android:label="fragment_share_covid_status"
         tools:layout="@layout/fragment_share_covid_status" >
+        <action
+            android:id="@+id/action_shareCovidStatusFragment_to_covidStatusFragment"
+            app:destination="@id/covidStatusFragment" />
         <action
             android:id="@+id/action_shareCovidStatusFragment_to_beContributingFragment"
             app:destination="@id/beContributingFragment" />
