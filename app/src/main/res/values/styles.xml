@@ -14,9 +14,11 @@
         <item name="colorOnPrimary">@color/colorOnPrimary</item>
         <item name="colorSecondary">@color/colorPrimaryDark</item>
         <item name="colorOnSecondary">@color/colorNavigationBottomBar</item>
+        <item name="android:lineSpacingExtra">@dimen/txt_interline</item>
     </style>
 
     <style name="TextAppearance.Large" parent="TextAppearance.AppCompat.Large">
+        <item name="android:lineSpacingExtra">@dimen/txt_interline</item>
         <item name="android:textSize">22sp</item>
         <item name="android:textStyle">bold</item>
         <item name="fontFamily">@font/avenir_black</item>
@@ -25,6 +27,7 @@
     </style>
 
     <style name="TextAppearance.Medium" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:lineSpacingExtra">@dimen/txt_interline</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
         <item name="fontFamily">@font/avenir_medium</item>
@@ -33,6 +36,7 @@
     </style>
 
     <style name="TextAppearance.Small" parent="TextAppearance.AppCompat.Small">
+        <item name="android:lineSpacingMultiplier">@dimen/txt_interline</item>
         <item name="android:textSize">16sp</item>
         <item name="fontFamily">@font/avenir_book</item>
         <item name="android:textColor">@color/colorFontDark</item>
@@ -40,6 +44,7 @@
     </style>
 
     <style name="TextAppearance.Light.SuperLarge" parent="TextAppearance.AppCompat.Large">
+        <item name="android:lineSpacingExtra">@dimen/txt_interline</item>
         <item name="android:textSize">36sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_gravity">left</item>
@@ -49,6 +54,7 @@
     </style>
 
     <style name="TextAppearance.Logo" parent="TextAppearance.AppCompat.Large">
+        <item name="android:lineSpacingExtra">@dimen/txt_interline</item>
         <item name="android:textSize">64sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_gravity">left</item>
@@ -58,6 +64,7 @@
     </style>
 
     <style name="TextAppearance.DarkBackground.SuperLarge" parent="TextAppearance.AppCompat.Large">
+        <item name="android:lineSpacingExtra">@dimen/txt_interline</item>
         <item name="android:textSize">36sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_gravity">left</item>
@@ -67,6 +74,7 @@
     </style>
 
     <style name="TextAppearance.DarkBackground.SuperMedium" parent="TextAppearance.AppCompat.Large">
+        <item name="android:lineSpacingExtra">@dimen/txt_interline</item>
         <item name="android:textSize">28sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_gravity">left</item>
@@ -76,6 +84,7 @@
     </style>
 
     <style name="TextAppearance.DarkBackground.Medium" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:lineSpacingExtra">@dimen/txt_interline</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
         <item name="fontFamily">@font/avenir_medium</item>
@@ -84,6 +93,7 @@
     </style>
 
     <style name="TextAppearance.DarkBackground.Small" parent="TextAppearance.AppCompat.Small">
+        <item name="android:lineSpacingExtra">@dimen/txt_interline</item>
         <item name="android:textSize">16sp</item>
         <item name="fontFamily">@font/avenir_book</item>
         <item name="android:textColor">@color/colorFontForDarkBackground</item>
@@ -91,6 +101,7 @@
     </style>
 
     <style name="TextAppearance.BlueSmall" parent="TextAppearance.AppCompat.Small">
+        <item name="android:lineSpacingExtra">@dimen/txt_interline</item>
         <item name="android:textSize">16sp</item>
         <item name="fontFamily">@font/avenir_book</item>
         <item name="android:textColor">@color/colorPrimary</item>

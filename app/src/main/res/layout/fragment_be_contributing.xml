@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:id="@+id/fragment_start"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:padding="@dimen/fragment_padding_extended"
-android:layout_margin="@dimen/fragment_margin"
-tools:context="care.vive.android.onboarding.StartFragment">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_be_contributing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/fragment_padding_extended"
+    android:layout_margin="@dimen/fragment_margin"
+    tools:context="care.vive.android.onboarding.BeContributingFragment">
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="350dp"
         app:layout_constraintBottom_toTopOf="@+id/btnNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,18 +31,35 @@ tools:context="care.vive.android.onboarding.StartFragment">
         app:layout_constraintTop_toBottomOf="@+id/image"
         app:layout_constraintVertical_bias="0.19">
 
-        <TextView
-            android:id="@+id/txtStartTitle"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="@dimen/activity_txt_margin_section"
-            android:layout_weight="1"
-            android:gravity="start"
-            android:text="@string/start_title"
-            android:textAppearance="@style/TextAppearance.Medium" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_txt_margin_title_1"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/txtContributingTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/become_contributor"
+                android:textAppearance="@style/TextAppearance.Medium" />
+
+            <Switch
+                android:id="@+id/switchBecomeContributing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_weight="1"
+                android:gravity="end">
+
+            </Switch>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/txtNotice"
@@ -51,41 +68,25 @@ tools:context="care.vive.android.onboarding.StartFragment">
             android:layout_marginStart="8dp"
             android:layout_marginTop="@dimen/activity_txt_margin_paragraph"
             android:layout_marginEnd="8dp"
-            android:text="@string/start_notice" />
+            android:text="@string/be_contributing_notice" />
     </LinearLayout>
 
     <com.kusu.loadingbutton.LoadingButton
         android:id="@+id/btnNext"
         android:layout_width="0dp"
         android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="@dimen/btn_margin_bottom_end_views"
         android:elevation="@dimen/button_elevation"
-        android:text="@string/btn_next_title"
+        android:text="@string/btn_finish_title"
         android:textAllCaps="false"
         android:textColor="@color/colorFontForDarkBackground"
         android:textSize="16sp"
-        android:layout_marginBottom="@dimen/activity_txt_margin_paragraph"
-        app:layout_constraintBottom_toTopOf="@+id/btnPolicy"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:lb_buttonColor="@color/colorPrimary"
+        app:lb_buttonColor="@color/colorPrimaryDark"
         app:lb_isCircular="false"
         app:lb_isShadowEnable="true"
         app:lb_shadowColor="@color/colorRipple"
         app:lb_shadowHeight="@dimen/btn_shadow_height" />
-
-    <TextView
-        android:id="@+id/btnPolicy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="@dimen/activity_txt_margin_section"
-        android:height="@dimen/button_height"
-        android:gravity="center_vertical"
-        android:text="@string/privacy_notice_title"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.BlueSmall"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="RtlCompat" />
 </androidx.constraintlayout.widget.ConstraintLayout>

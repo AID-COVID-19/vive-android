@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/fragment_date_status"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackgroundLight"
+    tools:context="care.vive.android.onboarding.DateStatusFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true"
+    android:layout_margin="@dimen/fragment_margin"
+    android:padding="@dimen/fragment_padding_extended">
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_txt_margin_first_line"
+            android:text="@string/title_date_covid"
+            android:textAppearance="@style/TextAppearance.Large" />
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/date_format"
+            android:layout_marginTop="@dimen/activity_txt_margin_first_line"
+            android:ems="10"
+            android:inputType="date" />
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_txt_margin_first_line"
+            android:text="@string/covid_date_notice_0"
+            android:textAppearance="@style/TextAppearance.Medium" />
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_txt_margin_first_line"
+            android:text="@string/covid_date_notice_1"
+            android:textAppearance="@style/TextAppearance.Small" />
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_txt_margin_paragraph"
+            android:text="@string/covid_date_notice_2"
+            android:textAppearance="@style/TextAppearance.Small" />
+        <TextView
+            android:id="@+id/title4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_txt_margin_paragraph"
+            android:text="@string/covid_date_notice_3"
+            android:textAppearance="@style/TextAppearance.Small" />
+    </TableLayout>
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="@dimen/btn_margin_bottom_end_views"
+        android:elevation="@dimen/button_elevation"
+        android:text="@string/btn_next_title"
+        android:textAllCaps="false"
+        android:textColor="@color/colorFontForDarkBackground"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lb_buttonColor="@color/colorPrimary"
+        app:lb_isCircular="false"
+        app:lb_isShadowEnable="true"
+        app:lb_shadowColor="@color/colorRipple"
+        app:lb_shadowHeight="@dimen/btn_shadow_height" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </DatePicker>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

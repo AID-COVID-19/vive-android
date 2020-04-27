@@ -6,26 +6,26 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import care.vive.android.util.BaseFragment
-import com.vive.android.databinding.FragmentStartBinding
+import com.vive.android.databinding.FragmentShareCovidStatusBinding
 
-class StartFragment : BaseFragment() {
+class ShareCovidStatusFragment  : BaseFragment() {
 
     private val viewModelOnboarding: OnboardingViewModel by activityViewModels()
-    private lateinit var binding: FragmentStartBinding
+    private lateinit var binding: FragmentShareCovidStatusBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentStartBinding.inflate(inflater, container, false)
+        binding = FragmentShareCovidStatusBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val listener: (View) -> Unit = {
-            val directions = StartFragmentDirections.actionStartFragmentToShareCovidStatusFragment()
+            val directions = ShareCovidStatusFragmentDirections.actionShareCovidStatusFragmentToCovidStatusFragment()
             navigate(directions)
         }
         binding.btnNext.setOnClickListener(listener)

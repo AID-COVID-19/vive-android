@@ -2,6 +2,11 @@
     <string name="app_name">VIVE</string>
     <string name="title_home">Map</string>
     <string name="title_sign_in">Sign In</string>
+    <string name="btn_next_title">Next</string>
+    <string name="btn_finish_title">Finish</string>
+    <string name="privacy_notice_title">Privacy Policy</string>
+    <string name="date_format">MMMM DD, AAAA</string>
+
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Profile</string>
     <string name="user_title">Your are a contributor</string>
@@ -9,24 +14,42 @@
     <string name="visits_suffix">checked visits</string>
     <string name="stop_scanning">Stop scanning explorer devices</string>
     <string name="stop_scanning_notice">You can stop and start at any time </string>Support
-    <string name="become_contributor">Become a contributor</string>
+    <string name="become_contributor">Become a contributing</string>
     <string name="become_contributor_notice">Turn your device into a server and help us restore the country</string>
     <string name="share_covid_status">Share your COVID-19 status</string>
     <string name="share_covid_status_notice">You can stop and start at any time</string>
     <string name="update_covid_status">Update your COVID-19 status</string>
     <string name="update_covid_status_notice">I had COVID-19 diagnosed by a physician.</string>
     <string name="support">Support</string>
-    <string name="support_notice">Report any violation of privacy, so that the Vive team can make the necessary corrections.</string>
-    <string name="about_how_works">About how Vive works</string>
+    <string name="support_notice">Report any violation of privacy, so that the VIVE team can make the necessary corrections.</string>
+    <string name="about_how_works">About how VIVE works</string>
     <string name="about_how_works_notice">This app processes the visits of users in places, using COVID-19 status, social distance and other variables, calculates the the approximate statistical risk of contagion of the place in real time, without exposing the identity of the user.</string>
     <string name="button_start">Start</string>
     <string name="button_how_this_works">How this works</string>
-    <string name="start_title">Discover which places are safe and reduce the risk of spread the SARS-CoV-2 virus, by sharing your status anonymously.</string>
+    <string name="start_title">Discover SARS-CoV-2 risk on the map.</string>
     <string name="splash_notice">Let’s restart our world working together!</string>
 
-     <string name="privacy_notice_title">Privacy Policy</string>
+    <string name="title_questions_option_covid">Select the option that best identifies your status</string>
+    <string name="radio_possible_covid">I have or is possible that I have COVID-19.</string>
+    <string name="radio_covid_diagnosed">I had COVID-19 diagnosed by a physician.</string>
+    <string name="radio_possible_had_covid">It is very possible that I have had COVID-19.</string>
+    <string name="radio_tested_positive_covid">I tested positive for the antibody test for COVID-19.</string>
+    <string name="radio_not_have_covid">I have not had COVID-19 or do not know my status.</string>
+
+    <string name="title_date_covid">When the symptoms started?</string>
+    <string name="covid_date_notice_0">Remember to be isolated at least until %s, or until your doctor has prescribed it.</string>>
+    <string name="covid_date_notice_1">We will send you notifications to follow your status.</string>
+    <string name="covid_date_notice_2">When you are recovered you will have developed antibodies that will allow you to return to your activities, at low risk.</string>
+    <string name="covid_date_notice_3">However, there is still much to investigate about possible mutations of the virus, or re-contagion, for which reason social distancing must continue to be applied.</string>
+
+    <string name="be_contributing_notice">Become a contributing VIVE user. Your device will serve as a proxy for the devices of explorer VIVE users to check in public places near you.</string>
+
+    <string name="share_status_title">Share your COVID-19 status anonymously</string>
+    <string name="share_status_notice">Take control about share your COVID-19 status. We do not save your location or any permanent identifier, VIVE will check in on nearby VIVE users who have decided to do it for you.</string>
 
     <string name="title_activity_maps">Map</string>
     <string name="error_missing_permissions">Error missing permissions!</string>
+    <string name="start_notice">Browse the map and discover in real time the possible risk of contagion in public places, calculated from the density of people on the site, the lifetime of the virus on surfaces and the voluntary and anonymous report of COVID-19 status.</string>
+
 
 </resources>

@@ -28,7 +28,7 @@ class SplashFragment : BaseFragment(), CoroutineScope {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         launch {
-            delay(2500)
+            delay(1500)
             withContext(Dispatchers.Main){
                 val directions = SplashFragmentDirections.actionSplashFragmentToStartFragment()
                 navigate(directions)
