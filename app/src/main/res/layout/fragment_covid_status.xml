@@ -27,11 +27,11 @@
             android:text="@string/title_questions_option_covid"
             android:textAppearance="@style/TextAppearance.Large" />
         <RadioGroup
-            android:id="@+id/radioGroup"
+            android:id="@+id/radioGroupCovidStatus"
             android:transitionGroup="true"
             >
             <RadioButton
-                android:id="@+id/radioPossibleCovid"
+                android:id="@+id/radioPossibleHaveCovid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/activity_txt_margin_section"
@@ -39,7 +39,15 @@
                 android:textAppearance="@style/TextAppearance.Small" />
 
             <RadioButton
-                android:id="@+id/radioIhHadCovid"
+                android:id="@+id/radioHaveCovidDiagnosed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_txt_margin_section"
+                android:text="@string/radio_covid_diagnosed"
+                android:textAppearance="@style/TextAppearance.Small" />
+
+            <RadioButton
+                android:id="@+id/radioPossibleIHaveHadCovid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/activity_txt_margin_section"
@@ -47,15 +55,7 @@
                 android:textAppearance="@style/TextAppearance.Small" />
 
             <RadioButton
-                android:id="@+id/radioPossibleIHadHaveCovid"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_txt_margin_section"
-                android:text="@string/radio_possible_had_covid"
-                android:textAppearance="@style/TextAppearance.Small" />
-
-            <RadioButton
-                android:id="@+id/radioPositiveCovid"
+                android:id="@+id/radioPositiveAntibodies"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/activity_txt_margin_section"
@@ -63,7 +63,7 @@
                 android:textAppearance="@style/TextAppearance.Small" />
 
             <RadioButton
-                android:id="@+id/radioPositiveAntibodies"
+                android:id="@+id/radioNotHadDoNotKnow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/activity_txt_margin_section"
@@ -80,6 +80,7 @@
         android:elevation="@dimen/button_elevation"
         android:text="@string/btn_next_title"
         android:textAllCaps="false"
+        android:enabled="false"
         android:textColor="@color/colorFontForDarkBackground"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
