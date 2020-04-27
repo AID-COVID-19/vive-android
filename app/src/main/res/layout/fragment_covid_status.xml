@@ -78,7 +78,6 @@
         android:layout_height="@dimen/button_height"
         android:layout_marginBottom="@dimen/btn_margin_bottom_end_views"
         android:elevation="@dimen/button_elevation"
-        android:enabled="false"
         android:text="@string/btn_next_title"
         android:textAllCaps="false"
         android:textColor="@color/colorFontForDarkBackground"

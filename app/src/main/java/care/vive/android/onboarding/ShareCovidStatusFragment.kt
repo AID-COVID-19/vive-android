@@ -6,28 +6,29 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import care.vive.android.util.BaseFragment
-import com.vive.android.databinding.FragmentDateStatusBinding
+import com.vive.android.databinding.FragmentShareCovidStatusBinding
 
-class DateStatusFragment  : BaseFragment() {
+class ShareCovidStatusFragment  : BaseFragment() {
 
     private val viewModelOnboarding: OnboardingViewModel by activityViewModels()
-    private lateinit var binding: FragmentDateStatusBinding
+    private lateinit var binding: FragmentShareCovidStatusBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentDateStatusBinding.inflate(inflater, container, false)
+        binding = FragmentShareCovidStatusBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val listener: (View) -> Unit = {
-            val directions = DateStatusFragmentDirections.actionDateStatusFragmentToShareCovidStatusFragment()
+            val directions = ShareCovidStatusFragmentDirections.actionShareCovidStatusFragmentToBeContributingFragment()
             navigate(directions)
         }
         binding.btnNext.setOnClickListener(listener)
     }
+
 }

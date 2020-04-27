@@ -9,7 +9,7 @@
         android:id="@+id/navigation_home"
         android:name="care.vive.android.map.MapFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_map" />
 
     <fragment
         android:id="@+id/navigation_notifications"

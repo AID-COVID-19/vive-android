@@ -3,17 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment_be_contributing"
+    android:id="@+id/fragment_share_covid_status"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/fragment_padding_extended"
     android:layout_margin="@dimen/fragment_margin"
-    tools:context="care.vive.android.onboarding.BeContributingFragment">
+    tools:context="care.vive.android.onboarding.ShareCovidStatusFragment">
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="340dp"
         app:layout_constraintBottom_toTopOf="@+id/btnNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
             android:weightSum="1">
 
             <TextView
-                android:id="@+id/txtContributingTitle"
+                android:id="@+id/txtShareCovidTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start|center_vertical"
@@ -47,11 +47,11 @@
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
                 android:gravity="start"
-                android:text="@string/become_contributor"
+                android:text="@string/share_status_title"
                 android:textAppearance="@style/TextAppearance.Medium" />
 
             <Switch
-                android:id="@+id/switchBecomeContributing"
+                android:id="@+id/switchShareStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|bottom"
@@ -68,7 +68,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="@dimen/activity_txt_margin_paragraph"
             android:layout_marginEnd="8dp"
-            android:text="@string/be_contributing_notice" />
+            android:text="@string/share_status_notice" />
     </LinearLayout>
 
     <com.kusu.loadingbutton.LoadingButton
