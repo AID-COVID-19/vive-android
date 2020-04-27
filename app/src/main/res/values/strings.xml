@@ -13,7 +13,7 @@
     <string name="visits_suffix">checked visits</string>
     <string name="stop_scanning">Stop scanning explorer devices</string>
     <string name="stop_scanning_notice">You can stop and start at any time </string>Support
-    <string name="become_contributor">Become a contributor</string>
+    <string name="become_contributor">Become a contributing</string>
     <string name="become_contributor_notice">Turn your device into a server and help us restore the country</string>
     <string name="share_covid_status">Share your COVID-19 status</string>
     <string name="share_covid_status_notice">You can stop and start at any time</string>
@@ -40,6 +40,11 @@
     <string name="covid_date_notice_1">We will send you notifications to follow your status.</string>
     <string name="covid_date_notice_2">When you are recovered you will have developed antibodies that will allow you to return to your activities, at low risk.</string>
     <string name="covid_date_notice_3">However, there is still much to investigate about possible mutations of the virus, or re-contagion, for which reason social distancing must continue to be applied.</string>
+
+    <string name="be_contributing_notice">Become a contributing VIVE user. Your device will serve as a proxy for the devices of explorer VIVE users to check in public places near you.</string>
+
+    <string name="share_status_title">Share your COVID-19 status anonymously</string>
+    <string name="share_status_notice">Take control about share your COVID-19 status. We do not save your location or any permanent identifier, VIVE will check in on nearby VIVE users who have decided to do it for you.</string>
 
     <string name="title_activity_maps">Map</string>
     <string name="error_missing_permissions">Error missing permissions!</string>
