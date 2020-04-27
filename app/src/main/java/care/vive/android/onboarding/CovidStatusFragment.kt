@@ -37,6 +37,9 @@ class CovidStatusFragment  : BaseFragment() {
     }
 
     private fun setupControls(){
+        if(viewModelOnboarding.covidSelectedId != -1)
+            binding.btnNext.isEnabled = true
+        binding.radioGroupCovidStatus.check(viewModelOnboarding.covidSelectedId)
         binding.radioGroupCovidStatus.setOnCheckedChangeListener { _, checkedId ->
             binding.btnNext.isEnabled = true
             viewModelOnboarding.covidSelectedId = checkedId
