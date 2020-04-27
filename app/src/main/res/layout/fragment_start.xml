@@ -8,7 +8,7 @@ android:layout_height="match_parent"
 android:layout_margin="@dimen/fragment_margin"
 android:background="@color/colorBackgroundLight"
 android:padding="@dimen/fragment_padding_extended"
-tools:context="care.vive.android.onboarding.OnboardingActivity">
+tools:context="care.vive.android.onboarding.StartFragment">
 
     <TextView
         android:layout_width="match_parent"
