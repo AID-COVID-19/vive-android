@@ -35,7 +35,6 @@
             android:inputType="date" />
         <TextView
             android:id="@+id/title1"
-            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_txt_margin_first_line"
             android:text="@string/covid_date_notice_0"
@@ -70,6 +69,7 @@
         android:layout_marginBottom="@dimen/btn_margin_bottom_end_views"
         android:elevation="@dimen/button_elevation"
         android:text="@string/btn_next_title"
+        android:enabled="false"
         android:textAllCaps="false"
         android:textColor="@color/colorFontForDarkBackground"
         android:textSize="16sp"
@@ -87,6 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
+        android:background="@color/colorBackgroundLight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -18,6 +18,7 @@ tools:context="care.vive.android.onboarding.StartFragment">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/d2"
         app:layout_constraintVertical_bias="0.19999999" />
 
     <LinearLayout
@@ -25,6 +26,7 @@ tools:context="care.vive.android.onboarding.StartFragment">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_txt_margin_section"
         app:layout_constraintBottom_toTopOf="@+id/btnNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,6 +37,7 @@ tools:context="care.vive.android.onboarding.StartFragment">
             android:id="@+id/txtStartTitle"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="@dimen/activity_txt_margin_section"
             android:layout_gravity="start|center_vertical"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"

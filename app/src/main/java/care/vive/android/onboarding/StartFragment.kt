@@ -1,11 +1,13 @@
 package care.vive.android.onboarding
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import care.vive.android.util.BaseFragment
+import care.vive.android.util.Utils
 import com.vive.android.databinding.FragmentStartBinding
 
 class StartFragment : BaseFragment() {
@@ -18,7 +20,9 @@ class StartFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val utils: Utils = Utils()
         binding = FragmentStartBinding.inflate(inflater, container, false)
+
         return binding.root
     }
 
