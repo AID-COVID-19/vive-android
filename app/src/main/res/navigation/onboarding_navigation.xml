@@ -30,6 +30,9 @@
         <action
             android:id="@+id/action_covidStatusFragment_to_dateStatusFragment"
             app:destination="@id/dateStatusFragment" />
+        <action
+            android:id="@+id/action_covidStatusFragment_to_beContributingFragment"
+            app:destination="@id/beContributingFragment" />
     </fragment>
     <fragment
         android:id="@+id/startFragment"

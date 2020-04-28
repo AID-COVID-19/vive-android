@@ -29,8 +29,14 @@ class CovidStatusFragment  : BaseFragment() {
         val listener: (View) -> Unit = {
             binding.btnNext.showLoading()
             binding.btnNext.isEnabled = false
-            val directions = CovidStatusFragmentDirections.actionCovidStatusFragmentToDateStatusFragment()
-            navigate(directions)
+            if(viewModelOnboarding.covidStatus == CovidStatus.HAVE_OR_POSSIBLE_HAVE_COVID) {
+                val directions = CovidStatusFragmentDirections.actionCovidStatusFragmentToDateStatusFragment()
+                navigate(directions)
+            }else {
+                val directions =
+                    CovidStatusFragmentDirections.actionCovidStatusFragmentToBeContributingFragment()
+                navigate(directions)
+            }
         }
         binding.btnNext.setOnClickListener(listener)
         setupControls()
