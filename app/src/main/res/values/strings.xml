@@ -37,7 +37,8 @@
     <string name="radio_not_have_covid">I have not had COVID-19 or do not know my status.</string>
 
     <string name="title_date_covid">When the symptoms started?</string>
-    <string name="covid_date_notice_0">Remember to be isolated at least until %s, or until your doctor has prescribed it.</string>>
+    <string name="covid_date_notice_0">Remember to be isolated at least until %s, or until your doctor has prescribed it.</string>
+    >
     <string name="covid_date_notice_1">We will send you notifications to follow your status.</string>
     <string name="covid_date_notice_2">When you are recovered you will have developed antibodies that will allow you to return to your activities, at low risk.</string>
     <string name="covid_date_notice_3">However, there is still much to investigate about possible mutations of the virus, or re-contagion, for which reason social distancing must continue to be applied.</string>
@@ -50,6 +51,9 @@
     <string name="title_activity_maps">Map</string>
     <string name="error_missing_permissions">Error missing permissions!</string>
     <string name="start_notice">Browse the map and discover in real time the possible risk of contagion in public places, calculated from the density of people on the site, the lifetime of the virus on surfaces and the voluntary and anonymous report of COVID-19 status.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
