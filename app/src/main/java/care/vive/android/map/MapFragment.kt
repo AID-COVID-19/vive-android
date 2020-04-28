@@ -104,6 +104,7 @@ open class MapFragment : Fragment(), OnMapReadyCallback {
             .weightedData(coordinates)
             .build()
         // Add a tile overlay to the map, using the heat map tile provider.
+        mMap.setMaxZoomPreference(16.9f)
         val mOverlay =
             mMap.addTileOverlay(TileOverlayOptions().tileProvider(mProvider))
         mOverlay.clearTileCache()
