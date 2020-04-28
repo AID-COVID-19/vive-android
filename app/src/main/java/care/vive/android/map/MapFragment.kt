@@ -1,6 +1,5 @@
 package care.vive.android.map
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +13,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.TileOverlayOptions
 import com.google.maps.android.heatmaps.HeatmapTileProvider
+import com.google.maps.android.heatmaps.WeightedLatLng
 import com.vive.android.R
 import com.vive.android.databinding.FragmentMapBinding
 import java.util.*
@@ -76,25 +76,32 @@ open class MapFragment : Fragment(), OnMapReadyCallback {
 
          */
         val pointX = doubleArrayOf(
-            40.712772, 40.712775, 40.709504, 40.709137, 40.709137, 40.711114, 40.708977, 40.715036,
-            40.706762, 40.70792, 40.704642, 40.70395, 40.709797, 40.705129, 40.705562, 40.715947,
-            40.705063, 40.704129, 40.715534, 40.706877, 40.717755, 40.717755
+            40.712772, 40.712775, 40.709504, 40.709137, 40.709137, 40.711114,
+            40.708977, 40.715036, 40.706762, 40.70792, 40.704642, 40.70395, 40.709797,
+            40.705129, 40.705562, 40.715947, 40.705063, 40.704129, 40.715534, 40.706877,
+            40.717755, 40.717755
         )
         val pointY = doubleArrayOf(
-            -74.006058, -74.005973, -74.014671, -74.013651, -74.013651, -74.010333, -74.009123,
-            -74.01584, -74.008945, -74.007214, -74.010322, -74.012354, -74.013888, -74.007936,
-            -74.007189,  -74.007367, -74.006177, -74.010336, -74.012052, -74.011265, -74.043143,
-            -74.043143
+            -74.006058, -74.005973, -74.014671, -74.013651, -74.013651, -74.010333,
+            -74.009123, -74.01584, -74.008945, -74.007214, -74.010322, -74.012354, -74.013888,
+            -74.007936, -74.007189, -74.007367, -74.006177, -74.010336, -74.012052, -74.011265,
+            -74.043143, -74.043143
         )
-        val intensityZ = doubleArrayOf(
-            1.0, 4.0, 2.0, 3.0, 1.0, 3.0, 1.0, 1.0, 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 4.0, 1.0, 3.0, 2.0, 3.0, 1.0
-        )
-        val coordinates: MutableList<LatLng> = ArrayList()
+        val intensityZ = DoubleArray(pointX.size)
         for (i in 0 until pointX.size - 1) {
-            coordinates.add(LatLng(pointX[i], pointY[i]))
+            intensityZ[i] = getRandomNumberInRange(1, 5).toDouble()
+        }
+        val coordinates: MutableList<WeightedLatLng> =
+            ArrayList()
+        val weightedLatLngs =
+            ArrayList<WeightedLatLng>()
+        for (i in 0 until pointX.size - 1) {
+            val current = LatLng(pointX[i], pointY[i])
+            val toAdd = WeightedLatLng(current, intensityZ[i])
+            coordinates.add(toAdd)
         }
         val mProvider = HeatmapTileProvider.Builder()
-            .data(coordinates)
+            .weightedData(coordinates)
             .build()
         // Add a tile overlay to the map, using the heat map tile provider.
         val mOverlay =
@@ -102,4 +109,9 @@ open class MapFragment : Fragment(), OnMapReadyCallback {
         mOverlay.clearTileCache()
     }
 
+    private fun getRandomNumberInRange(min: Int, max: Int): Int {
+        require(min < max) { "max must be greater than min" }
+        val r = Random()
+        return r.nextInt(max - min + 1) + min
+    }
 }
